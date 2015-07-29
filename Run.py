@@ -16,9 +16,11 @@ while True:
 			print(line)
 			if "PING" in line:
 				s.send(line.replace("PING", "PONG"))
+				break
 			user = getUser(line)
 			message = getMessage(line)
 			print user + " typed :" + message
 			if "You Suck" in message:
 				sendMessage(s, "No, you suck!")
+				break
 			

@@ -19,7 +19,7 @@ while True:
 				break
 			user = getUser(line)
 			message = getMessage(line)
-			print user + " typed :" + message
+			print (user + " typed :" + message)
 			if "You Suck" in message:
 				sendMessage(s, "No, you suck!")
 				break
